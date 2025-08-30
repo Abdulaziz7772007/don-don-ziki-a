@@ -1,0 +1,27 @@
+const scoreEl = document.getElementById('score'),
+	handsEl = document.querySelectorAll('.hand'),
+	hideHandEl = document.querySelectorAll('.hide-hand'),
+	chooseZoneEl = document.getElementsByClassName('chooseZone'),
+	winnerZoneEl = document.getElementsByClassName('winnerZone'),
+	returnGameEl = document.getElementById('returnGame'),
+	showWinnerEl = document.getElementById('showWinner'),
+	ucerChooseEl = document.getElementById('ucerChoose'),
+	aiChooseEl = document.getElementById('aiChoose'),
+	modeChangeEl = document.getElementById('modeChange'),
+	rulesBtnEl = document.getElementById('rulesBtn'),
+	rulesImgEl = document.getElementById('rulesImg')
+
+export {
+	scoreEl,
+	hideHandEl,
+	handsEl,
+	chooseZoneEl,
+	winnerZoneEl,
+	returnGameEl,
+	showWinnerEl,
+	ucerChooseEl,
+	aiChooseEl,
+	modeChangeEl,
+	rulesBtnEl,
+	rulesImgEl,
+}

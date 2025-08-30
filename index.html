@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Don don ziki</title>
+	<link rel="stylesheet" href="./css/output.css">
+</head>
+<body>
+	<div class="bg-blue-950 h-full w-full">
+		<header >
+			<div class="flex gap-60 justify-center border-2 p-5 ">
+				<img src="./images/3logo.svg" alt="logo">
+				<div class="bg-white w-[150px] h-[100px] rounded-2xl" >
+					<p class="text-center text-3xl text-blue-900">Score</p>
+					<h2 id="score" class=" text-4xl text-center text-blue-900">0</h2>
+				</div>
+			</div>
+		</header>
+		<section>
+			<div class="chooseZone justify-center ">
+				<button class="hand">
+					<img src="./images/paper.svg" alt="paper" width="150px" height="150px">
+				</button>
+				<button class="hand">
+					<img src="./images/rock.svg" alt="rock" width="150px" height="150px">
+				</button>
+				<button class="hand">
+					<img src="./images/scissors.svg" alt="scissors" width="150px" height="150px">
+				</button>
+				<button class="hidden hand hide-hand">
+					<img src="./images/lizard.svg" alt="lizard" width="150px" height="150px">
+				</button>
+				<button class="hidden hand hide-hand">
+					<img src="./images/spock.svg" alt="spock" width="150px" height="150px">
+				</button>
+			</div>
+		</section>
+		<section>
+			<div class="flex hidden winnerZone">
+				<img id="ucerChoose" src="./images/paper.svg" alt="">
+				<div>
+					<button id="returnGame">Return game</button>
+					<h2 id="showWinner">You win</h2>
+				</div>
+				<img id="aiChoose" src="./images/hand-load.svg" alt="load">
+			</div>
+		</section>
+		
+
+		<div>
+			<button id="modeChange" class="btn">Easy mode</button>
+
+			<label for="my_modal_6"  id="rulesBtn" class="btn">Rules</label>
+
+			<input type="checkbox" id="my_modal_6" class="modal-toggle" />
+			<div class="modal" role="dialog">
+				<div class="modal-box">
+					<h3 class="text-lg font-bold">Rules</h3>
+					<img id="rulesImg" src="./images/rules.svg" alt="">
+					<div class="modal-action">
+						<label for="my_modal_6" class="btn">Close!</label>
+					</div>
+			</div>
+		</div>
+		</div>
+		
+	</div>
+	
+	
+	<script src="./js/main.js" type="module"></script>
+</body>
+</html>
