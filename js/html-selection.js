@@ -1,15 +1,16 @@
 const scoreEl = document.getElementById('score'),
 	handsEl = document.querySelectorAll('.hand'),
 	hideHandEl = document.querySelectorAll('.hide-hand'),
-	chooseZoneEl = document.getElementsByClassName('chooseZone'),
-	winnerZoneEl = document.getElementsByClassName('winnerZone'),
+	chooseZoneEl = document.querySelector('.chooseZone'),
+	winnerZoneEl = document.querySelector('.winnerZone'),
 	returnGameEl = document.getElementById('returnGame'),
 	showWinnerEl = document.getElementById('showWinner'),
 	ucerChooseEl = document.getElementById('ucerChoose'),
 	aiChooseEl = document.getElementById('aiChoose'),
 	modeChangeEl = document.getElementById('modeChange'),
 	rulesBtnEl = document.getElementById('rulesBtn'),
-	rulesImgEl = document.getElementById('rulesImg')
+	rulesImgEl = document.getElementById('rulesImg'),
+	zoneGridEl = document.getElementById('zoneGrid')
 
 export {
 	scoreEl,
@@ -24,4 +25,5 @@ export {
 	modeChangeEl,
 	rulesBtnEl,
 	rulesImgEl,
+	zoneGridEl,
 }

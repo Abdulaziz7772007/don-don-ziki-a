@@ -1,4 +1,4 @@
-import { chooseZoneEl, winnerZoneEl } from './html-selection'
+import { chooseZoneEl, winnerZoneEl } from './html-selection.js'
 
 export function switchZone(boolean) {
 	if (boolean) {

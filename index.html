@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="./css/output.css">
 </head>
 <body>
-	<div class="bg-blue-950 h-full w-full">
+	<div class="bg-blue-950 min-h-[100vh] w-full">
 		<header >
 			<div class="flex gap-60 justify-center border-2 p-5 ">
 				<img src="./images/3logo.svg" alt="logo">
@@ -18,32 +18,32 @@
 			</div>
 		</header>
 		<section>
-			<div class="chooseZone justify-center ">
+			<div id="zoneGrid" class="chooseZone  date-mode='easy' justify-center">
 				<button class="hand">
-					<img src="./images/paper.svg" alt="paper" width="150px" height="150px">
+					<img class="hover:cursor-pointer" src="./images/paper.svg" alt="paper" width="150px" height="150px">
 				</button>
 				<button class="hand">
-					<img src="./images/rock.svg" alt="rock" width="150px" height="150px">
+					<img class="hover:cursor-pointer" src="./images/rock.svg" alt="rock" width="150px" height="150px">
 				</button>
 				<button class="hand">
-					<img src="./images/scissors.svg" alt="scissors" width="150px" height="150px">
+					<img class="hover:cursor-pointer" src="./images/scissors.svg" alt="scissors" width="150px" height="150px">
 				</button>
 				<button class="hidden hand hide-hand">
-					<img src="./images/lizard.svg" alt="lizard" width="150px" height="150px">
+					<img class="hover:cursor-pointer" src="./images/lizard.svg" alt="lizard" width="150px" height="150px">
 				</button>
 				<button class="hidden hand hide-hand">
-					<img src="./images/spock.svg" alt="spock" width="150px" height="150px">
+					<img class="hover:cursor-pointer" src="./images/spock.svg" alt="spock" width="150px" height="150px">
 				</button>
 			</div>
 		</section>
-		<section>
-			<div class="flex hidden winnerZone">
-				<img id="ucerChoose" src="./images/paper.svg" alt="">
+		<section >
+			<div class="flex hidden winnerZone justify-center">
+				<img id="ucerChoose" src="./images/paper.svg" alt="" width="225px" height="225px">
 				<div>
-					<button id="returnGame">Return game</button>
-					<h2 id="showWinner">You win</h2>
+					<button id="returnGame" class="btn block mt-10">Return game</button>
+					<h2 id="showWinner" class="btn hidden mt-5 "></h2>
 				</div>
-				<img id="aiChoose" src="./images/hand-load.svg" alt="load">
+				<img id="aiChoose" src="./images/hand-load.svg" alt="load" width="225px" height="225px">
 			</div>
 		</section>
 		

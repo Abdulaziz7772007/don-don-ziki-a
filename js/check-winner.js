@@ -1,16 +1,17 @@
-import { scoreEl } from './html-selection'
+import { lizard, paper, rock, scissors, spock } from './constants.js'
+import { scoreEl } from './html-selection.js'
 
 let score = 0
 export function checkWinner(ai, ucer) {
 	if (ai == ucer) {
 		return { result: 'draw', winner: 'draw' }
 	}
-	aiWins =
-		(ai === rock && (user === scissors || user === lizard)) ||
-		(ai === scissors && (user === paper || user === lizard)) ||
-		(ai === paper && (user === rock || user === spock)) ||
-		(ai === lizard && (user === spock || user === paper)) ||
-		(ai === spock && (user === scissors || user === rock))
+	const aiWins =
+		(ai === rock && (ucer === scissors || ucer === lizard)) ||
+		(ai === scissors && (ucer === paper || ucer === lizard)) ||
+		(ai === paper && (ucer === rock || ucer === spock)) ||
+		(ai === lizard && (ucer === spock || ucer === paper)) ||
+		(ai === spock && (ucer === scissors || ucer === rock))
 	if (aiWins) {
 		if (score > 0) {
 			score--
